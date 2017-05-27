@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.eshop.fena.myprofessional.HomeActivity"
+            android:name=".HomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,40 +17,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.eshop.fena.myprofessional.RegisterActivity"
+            android:name=".RegisterActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.eshop.fena.myprofessional.LoginActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.eshop.fena.myprofessional.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.eshop.fena.myprofessional.CreateJob"
+            android:name=".CreateJob"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.eshop.fena.myprofessional.CreateProfile"
+            android:name=".CreateProfile"
             android:label="@string/app_name" >
 
         </activity>
-        <activity android:name="com.eshop.fena.myprofessional.Register"
+        <activity android:name=".Register"
             android:label="@string/app_name" >
 
         </activity>
 
-        <activity android:name="com.eshop.fena.myprofessional.Login">
+        <activity android:name=".Login">
 
         </activity>
-        <activity android:name="com.eshop.fena.myprofessional.JProfile">
+        <activity android:name=".JProfile">
 
         </activity>
-        <activity android:name="com.eshop.fena.myprofessional.ViewJobs">
+        <activity android:name=".ViewJobs">
 
         </activity>
+
 
     </application>
 

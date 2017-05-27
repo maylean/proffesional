@@ -86,29 +86,33 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="?android:textAppearanceSmall"
+        android:layout_gravity="center_horizontal"
+        android:background="#059de7"
+
+        android:elevation="4dp"
+        android:textSize="25dp"
+        android:paddingLeft="70dp"
         android:id="@+id/submit"
+        android:paddingRight="70dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:text="Submit"
-        android:textColor="#fff"
-        android:layout_marginTop="16dp"
-        android:layout_margin="15dp"
-        android:textSize="16sp"
-        android:typeface="serif"
-        android:padding="5dp"
-        android:background="@color/my_primary"
-        android:textStyle="bold"/>
+        android:textColor="#fff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_margin="15dp"
-        android:textSize="16sp"
-        android:typeface="serif"
-        android:padding="5dp"
-        android:background="@color/my_primary"
-        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:background="#059de7"
+        android:elevation="4dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="70dp"
         android:id="@+id/login"
+        android:paddingRight="70dp"
+
         android:text="Login"
         android:textColor="#fff" />
 </LinearLayout>

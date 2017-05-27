@@ -1,2 +1,0 @@
-# proffesional
-main project folder

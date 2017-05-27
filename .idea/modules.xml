@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Myprofessional.iml" filepath="$PROJECT_DIR$/Myprofessional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JobConnect.iml" filepath="$PROJECT_DIR$/JobConnect.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
