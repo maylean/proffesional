@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="No Job Posts"
+            android:typeface="serif"
+            android:textColor="#333"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/sign_up"
+            style="?android:textAppearanceSmall"
+            android:layout_marginTop="16dp"
+            android:text="Post a Job"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="16sp"
+            android:typeface="serif"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="@color/my_primary"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

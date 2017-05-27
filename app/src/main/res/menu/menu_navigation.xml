@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none"
+        android:id="@+id/group1">
+        <item
+            android:icon="@drawable/ic_home_black_24dp"
+            android:id="@+id/home"
+            android:tint="@color/button_material_light"
+            android:title="Home" />
+        <item
+            android:id="@+id/profile"
+            android:tint="@color/button_material_light"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/job"
+            android:tint="@color/button_material_light"
+            android:title="Job Posts" />
+
+        <item
+            android:id="@+id/bids"
+            android:tint="@color/button_material_light"
+            android:title="View Bids" />
+        <item
+            android:icon="@drawable/ic_login"
+            android:id="@+id/login"
+            android:tint="@color/button_material_light"
+            android:title="Log Out" />
+
+    </group>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/group2">
+        <item
+            android:icon="@drawable/ic_info_white_24dp"
+            android:id="@+id/About"
+            android:tint="@color/button_material_light"
+            android:title="About Us" />
+        <item
+            android:icon="@drawable/ic_help_white_24dp"
+            android:id="@+id/Contact"
+            android:tint="@color/button_material_light"
+            android:title="Contact Us" />
+
+    </group>
+</menu>
