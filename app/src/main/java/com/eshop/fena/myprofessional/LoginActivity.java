@@ -1,4 +1,4 @@
-package com.example.agabil4c.jobconnect;
+package com.eshop.fena.myprofessional;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,40 +9,43 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.agabil4c.jobconnect.R;
+
 /**
  * Created by agabil4c on 5/27/2017.
  */
-public class RegisterActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
 
+    private String[] leftSliderData = {"Home", "Login", "Sitemap", "About", "Contact Me"};
     private android.support.v7.widget.Toolbar toolbar;
-    Button login;
     Button register;
+    Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register);
+        setContentView(R.layout.login);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        register = (Button)findViewById(R.id.email_sign_up);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(i);
+            }
+        });
 
         login = (Button)findViewById(R.id.email_sign_in_button);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
+                Intent i = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });
-        register = (Button)findViewById(R.id.sign_up);
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(RegisterActivity.this, MainActivity.class);
-                startActivity(i);
-            }
-        });
-
 
 
     }

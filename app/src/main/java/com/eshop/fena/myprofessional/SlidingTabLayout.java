@@ -1,4 +1,4 @@
-package com.example.agabil4c.jobconnect;
+package com.eshop.fena.myprofessional;
 
         import android.annotation.TargetApi;
         import android.content.Context;
@@ -17,6 +17,7 @@ package com.example.agabil4c.jobconnect;
         import android.widget.LinearLayout;
         import android.widget.TextView;
 
+        import com.example.agabil4c.jobconnect.R;
 
 
 public class SlidingTabLayout extends HorizontalScrollView {

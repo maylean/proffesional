@@ -1,47 +1,52 @@
-package com.example.agabil4c.jobconnect;
+package com.eshop.fena.myprofessional;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class Register extends AppCompatActivity {
+import com.example.agabil4c.jobconnect.R;
+
+/**
+ * Created by agabil4c on 5/27/2017.
+ */
+public class RegisterActivity extends AppCompatActivity {
+
 
     private android.support.v7.widget.Toolbar toolbar;
+    Button login;
+    Button register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.register);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        Button submit,login;
-        login = (Button) findViewById(R.id.login);
-        submit = (Button) findViewById(R.id.submit);
-        submit.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
 
-                // Start NewActivity.class
-                Intent myIntent = new Intent(Register.this,
-                        JProfile.class);
-                startActivity(myIntent);
-            }
-        });
-
-
+        login = (Button)findViewById(R.id.email_sign_in_button);
         login.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-                Intent myIntent = new Intent(Register.this,
-                        Login.class);
-                startActivity(myIntent);
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(i);
             }
         });
+        register = (Button)findViewById(R.id.sign_up);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(RegisterActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+
     }
 
     @Override
